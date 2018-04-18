@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
@@ -284,18 +284,20 @@ class App extends Component {
           since the nested components share the same Book subcomponent,
           otherwise it causes Typeerror: handleShelfSelect is not a function */}
           <handleShelfSelectContext.Provider value={this.handleShelfSelect}>
-            <Route exact path="/" render={() => <ListBooks />} />
-            <Route
-              exact
-              path="/search"
-              render={() => (
-                <updateSearchQueryContext.Provider
-                  value={this.updateSearchQuery}
-                >
-                  <SearchBooks />
-                </updateSearchQueryContext.Provider>
-              )}
-            />
+            <Switch>
+              <Route exact path="/" render={() => <ListBooks />} />
+              <Route
+                exact
+                path="/search"
+                render={() => (
+                  <updateSearchQueryContext.Provider
+                    value={this.updateSearchQuery}
+                  >
+                    <SearchBooks />
+                  </updateSearchQueryContext.Provider>
+                )}
+              />
+            </Switch>
           </handleShelfSelectContext.Provider>
         </stateContext.Provider>
       </React.StrictMode>
