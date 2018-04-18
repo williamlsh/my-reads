@@ -1,12 +1,14 @@
 # MyReads Project
 
-> A Project App implemented with [React](https://reactjs.org) and [React Router](https://github.com/ReactTraining/react-router) and bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+> [A Project App](https://my-reads-njnlzbwgsw.now.sh/) implemented with [React](https://reactjs.org) and [React Router](https://github.com/ReactTraining/react-router) and bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ----
 
 </br>
 
 ## MyReads Project Folder Structure
+
+Visit the project demo at this URL: [https://my-reads-njnlzbwgsw.now.sh/](https://my-reads-njnlzbwgsw.now.sh/).
 
 ```bash
 ├── README.md
@@ -36,7 +38,7 @@
 
 ## MyReads Project Description
 
-This project app is a good example of using `Pure React`. what's more, in this app, I had heavily used the [new Context API](https://reactjs.org/docs/context.html) (rather than choosing [Redux](https://redux.js.org)) which I found quit useful and convenient.
+[This project app](https://my-reads-njnlzbwgsw.now.sh/) is a good example of using `Pure React`. what's more, in this app, I had heavily used the [new Context API](https://reactjs.org/docs/context.html) (rather than choosing [Redux](https://redux.js.org)) which I found quit useful and convenient.
 
 I made all components under [React Strict Mode](https://reactjs.org/docs/strict-mode.html) but warning messages always appears since the [React Router](https://github.com/ReactTraining/react-router) itself didn't come up updating with the new react lifecycle.
 
