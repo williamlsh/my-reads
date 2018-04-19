@@ -43,3 +43,15 @@ Visit the project demo at this URL: [https://my-reads-sewquuiczv.now.sh](https:/
 I made all components under [React Strict Mode](https://reactjs.org/docs/strict-mode.html) but warning messages always appears since the [React Router](https://github.com/ReactTraining/react-router) itself didn't come up updating with the new react lifecycle.
 
 Finally, this project is developed at the foundation of [reactnd-project-myreads-starter](https://github.com/udacity/reactnd-project-myreads-starter) which is very helpful. I had done my best to optimize the major part codes and made it more simple and readable.
+
+----
+
+</br>
+
+## Getting started developing
+
+- Branch and/or clone the repo locally.
+- cd into it
+- install all the require packages: `npm i`
+- build the project: `npm run build`
+- start the project: `npm start`
