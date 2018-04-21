@@ -116,56 +116,52 @@ function ListBooks() {
   );
 }
 
-class SearchBooksBar extends Component {
-  render() {
-    return (
-      <div className="search-books-bar">
-        <Link className="close-search" to="/">
-          Close
-        </Link>
-        <div className="search-books-input-wrapper">
-          <stateContext.Consumer>
-            {stateContextValue => (
-              <updateSearchQueryContext.Consumer>
-                {updateSearchQuery => {
-                  const searchQuery = stateContextValue.searchQuery;
-                  console.log(searchQuery);
-                  return (
-                    <input
-                      type="text"
-                      placeholder="Search by title or author"
-                      onChange={updateSearchQuery}
-                      value={searchQuery}
-                    />
-                  );
-                }}
-              </updateSearchQueryContext.Consumer>
-            )}
-          </stateContext.Consumer>
-        </div>
+function SearchBooksBar() {
+  return (
+    <div className="search-books-bar">
+      <Link className="close-search" to="/">
+        Close
+      </Link>
+      <div className="search-books-input-wrapper">
+        <stateContext.Consumer>
+          {stateContextValue => (
+            <updateSearchQueryContext.Consumer>
+              {updateSearchQuery => {
+                const searchQuery = stateContextValue.searchQuery;
+                console.log(searchQuery);
+                return (
+                  <input
+                    type="text"
+                    placeholder="Search by title or author"
+                    onChange={updateSearchQuery}
+                    value={searchQuery}
+                  />
+                );
+              }}
+            </updateSearchQueryContext.Consumer>
+          )}
+        </stateContext.Consumer>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-class SearchBookResults extends Component {
-  render() {
-    return (
-      <div className="search-books-results">
-        <ol className="books-grid">
-          <stateContext.Consumer>
-            {stateContextValue => {
-              const searchBookResults = stateContextValue.searchBookResults;
-              const BookComponent = searchBookResults.map((book, index) => (
-                <Book key={index} book={book} />
-              ));
-              return BookComponent;
-            }}
-          </stateContext.Consumer>
-        </ol>
-      </div>
-    );
-  }
+function SearchBookResults(){
+  return (
+    <div className="search-books-results">
+      <ol className="books-grid">
+        <stateContext.Consumer>
+          {stateContextValue => {
+            const searchBookResults = stateContextValue.searchBookResults;
+            const BookComponent = searchBookResults.map((book, index) => (
+              <Book key={index} book={book} />
+            ));
+            return BookComponent;
+          }}
+        </stateContext.Consumer>
+      </ol>
+    </div>
+  );
 }
 
 function SearchBooks() {
