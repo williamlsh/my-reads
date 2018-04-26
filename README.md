@@ -51,9 +51,9 @@ Visit the project demo at this URL: [https://my-reads-sewquuiczv.now.sh](https:/
 
 ![An awesome example image](screenshot/1.png)
 
-
 ----
 </br>
+
 ## MyReads Project Description
 
 [This project app](https://my-reads-sewquuiczv.now.sh) is a good example of using `Pure React`. what's more, in this app, I had heavily used the [new Context API](https://reactjs.org/docs/context.html) (rather than choosing [Redux](https://redux.js.org)) which I found quit useful and convenient.
