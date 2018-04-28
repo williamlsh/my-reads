@@ -6,6 +6,21 @@
 
 </br>
 
+## Features
+
+- Review books from different shelves: Currently Reading, Want to Read, Read;
+
+- Move books between different shelves: Currently Reading, Want to Read, Read and None;
+
+- Search books from resources based on Google Books API.
+
+</br>
+
+Click the bottom right `plus` icon to start searching most books, suggestions appears when typing. Just have fun!
+
+----
+</br>
+
 ## MyReads Project Folder Structure
 
 Visit the project demo at this URL: [https://my-reads-sewquuiczv.now.sh](https://my-reads-sewquuiczv.now.sh).
@@ -43,6 +58,19 @@ Visit the project demo at this URL: [https://my-reads-sewquuiczv.now.sh](https:/
 - install all the require packages: `npm i`
 - build the project: `npm run build`
 - start the project: `npm start`
+
+----
+</br>
+
+## Tech stacks used in this project
+
+- React
+
+- React Router
+
+- Fetch API
+
+Since the project is bootstrapped with create-react-app, please read its documentation details here: [Documentation](https://github.com/facebookincubator/create-react-app).
 
 ----
 </br>
